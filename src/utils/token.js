@@ -1,11 +1,11 @@
 const TokenKey = 'Web-Token'
 
 export const getToken = () => {
-	return localStorage.get(TokenKey)
+	return localStorage.getItem(TokenKey)
 }
 
 export const setToken = (token) => {
-	return localStorage.set(TokenKey, token)
+	return localStorage.setItem(TokenKey, token)
 }
 
 export const removeToken = () => {
